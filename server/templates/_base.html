@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{ page_title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/static/bulma.min.css">
+		<link rel="stylesheet" href="/static/main.css">
+		{% block extrahead %}{% endblock %}
+	</head>
+	<body>
+
+	<div class="columns">
+		<content class="column">
+			<div class="content">
+			{% block body %}{% endblock %}
+			</div>
+		</content>
+	</div>
+
+	</body>
+</html>
